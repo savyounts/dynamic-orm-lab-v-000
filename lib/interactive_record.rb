@@ -62,10 +62,10 @@ class InteractiveRecord
     end
     # binding.pry
     return DB[:conn].execute("SELECT * FROM #{table_name} WHERE #{attribute}'")
-  end 
+  end
 
-  
-  
+
+
 
 
 end
