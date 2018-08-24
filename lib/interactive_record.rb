@@ -61,10 +61,11 @@ class InteractiveRecord
       values << part
     end
     # binding.pry
-    return DB[:conn].execute("SELECT * FROM #{table_name} WHERE #{values[0][0].to_s} = '#{values[0][1]}'")
-  end
+    return DB[:conn].execute("SELECT * FROM #{table_name} WHERE #{attribute}'")
+  end 
 
-
+  
+  
 
 
 end
